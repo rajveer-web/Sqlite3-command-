@@ -37,3 +37,8 @@ id  origin    destination  duration
 2   New york  London       140     
 3   Lima      New York     435     
 4   Moscow    Paris        245   
+
+sqlite> select * from flights where origin = "New york";
+id  origin    destination  duration
+--  --------  -----------  --------
+2   New york  London       140    
