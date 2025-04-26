@@ -42,3 +42,16 @@ sqlite> select * from flights where origin = "New york";
 id  origin    destination  duration
 --  --------  -----------  --------
 2   New york  London       140    
+
+
+
+sqlite> select * from flights where duration > 500;
+
+
+select * from flights where duration > 500 and destination = "Paris";
+
+select * from flights where duration > 500 or destination = "Paris";
+
+select * from flights where origin IN ("New York","Paris");
+
+select * from flights where origin like "%a%";
