@@ -55,3 +55,6 @@ select * from flights where duration > 500 or destination = "Paris";
 select * from flights where origin IN ("New York","Paris");
 
 select * from flights where origin like "%a%";
+
+Update flights 
+set duration = 430 where origin = "New York" and destination = "London";
