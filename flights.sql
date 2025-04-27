@@ -58,3 +58,8 @@ select * from flights where origin like "%a%";
 
 Update flights 
 set duration = 430 where origin = "New York" and destination = "London";
+
+
+select first, origin, destination from flight join passengers on passengers.flight_id = flight.id;
+
+create INDEX name_index on passengers(last);
